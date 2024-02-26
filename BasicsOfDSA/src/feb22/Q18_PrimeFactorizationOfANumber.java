@@ -13,7 +13,7 @@ public class Q18_PrimeFactorizationOfANumber {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		
-		for(int i = 2; i<n; i++)
+		for(int i = 2; i*i<=n; i++)
 		{
 			while(n%i == 0)
 			{
