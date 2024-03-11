@@ -15,18 +15,23 @@ public class Q9_IsANumberPrime {
 		for(int i =0; i<t; i++)
 		{
 			int n = sc.nextInt();
-			for(int j = 2 ; j<n; j++)
+			
+			int count = 0;
+			for(int j = 2 ; j*j<n; j++)
 			{
 				if(n%j==0)
 				{
-					System.out.println("not prime");
+					count++;
 					break;
 				}
-				else
-				{
-					System.out.println("prime");
-					break;
-				}
+			}
+			if(count == 0)
+			{
+				System.out.println("prime");
+			}
+			else
+			{
+				System.out.println("non-prime");
 			}
 		}
 	}
