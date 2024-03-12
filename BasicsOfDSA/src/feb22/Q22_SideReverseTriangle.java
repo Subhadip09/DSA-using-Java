@@ -1,4 +1,5 @@
-//Video no. 35 & 36 of pepcoding
+//Video no. 37 & 38 of pepcoding
+// Pattern - 2
 //Question
 // 1.you are given a no. n
 // 2.you've to create a pattern of * and separated by tab shown in o/p format
@@ -22,7 +23,7 @@ public class Q22_SideReverseTriangle {
 		{
 			for(int j = 1; j<=i; j++)
 			{
-				System.out.print("* ");
+				System.out.print("*\t");
 			}
 			System.out.println();
 		}
